@@ -46,3 +46,23 @@ footer a {
   text-decoration: none;
   margin: 0 5px;
 }
+
+.app-store-button,
+.google-play-button {
+  width: 150px; /* Adjust the width to your desired size */
+  height: 50px; /* Adjust the height to your desired size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.app-store-button:hover,
+.google-play-button:hover {
+  background-color: #ddd;
+}
