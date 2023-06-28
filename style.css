@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://www.canva.com/templates/s/background/");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+}
+
+header img {
+  width: 100px;
+}
+
+main {
+  text-align: center;
+  margin-top: 200px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
