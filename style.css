@@ -102,13 +102,14 @@ p {
 .links a {
   display: inline-block;
   text-align: center;
+
 }
 
 footer {
 
   bottom: 0;
   width: 100vw;
-
+margin-top: 10rem;
   color: #fff;
 
   text-align: center;
@@ -130,7 +131,7 @@ footer {
 }
 
 footer a {
-  color: #fff;
+  color: #ffffffca;
   text-decoration: none;
 
 }

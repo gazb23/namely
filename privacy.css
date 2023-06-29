@@ -53,13 +53,15 @@ body {
 }
 
 header {
-  padding: 0px;
-  background-color: #F8D6D2;
+
+margin-bottom: 10rem;
+  background-color: #f8d6d2e8;
   margin-bottom: 40px;
+
 }
 
 header img {
-  width: 150px;
+  width: 75px;
 }
 
 .logo {
