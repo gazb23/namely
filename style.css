@@ -92,7 +92,7 @@ p {
 
   margin: auto;
   text-align: center;
-  margin-bottom: 50px;
+ 
 }
 
 .links {
@@ -120,6 +120,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
+  padding: 8px;
 }
 
 .copy-right {

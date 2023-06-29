@@ -86,3 +86,31 @@ footer a {
   max-width: 100%;
 
 }
+
+/* Added media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 0px;
+  }
+
+  header {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+
+  header img {
+    width: 75px;
+  }
+
+  footer {
+    margin-top: 2rem;
+    padding: 5px;
+  }
+
+ 
+}
