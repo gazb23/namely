@@ -22,6 +22,17 @@ body {
   background-color: #646464;
 }
 
+.description {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  max-width: 70%; 
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 header {
   padding: 0;
 }
@@ -42,17 +53,36 @@ main {
 }
 
 
+
+
 h1 {
-  color: #171717;
-  font-size: 58px;
-  font-weight: 600;
+  color: #eeeeee;
+  margin-bottom: 16px;
+  font-size: 80px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-  color: #504f50;
-  font-size: 24px;
+  color: #1d1d1d;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+ 
+  
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+p {
+  color: #3b3b3b;
+  font-size: 18px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .links {
@@ -68,18 +98,32 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #A8A8AB;
-  color: #fff;
-  padding: 4px 0;
+ 
+  color: #fff; 
+
   text-align: center;
   max-width: 1920px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.copy-right {
+  flex: auto;
+  
+
 }
 
 footer a {
   color: #fff;
   text-decoration: none;
-  margin: 0 5px;
+  
 }
+
 
 .app-store-button,
 .google-play-button {
@@ -108,7 +152,7 @@ footer a {
   padding: 20px;
   backdrop-filter: blur(15px);
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.358), 0 0 50px rgba(0, 0, 0, 0.1);
 }
