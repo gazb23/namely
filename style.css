@@ -1,12 +1,19 @@
 body {
-  background-image: url("assets/background.jpeg");   
-  background-position: right;  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  background-image: url("assets/background.jpeg");
+  background-position: right;
   background-repeat: no-repeat;
-  font-family: 'Poppins', sans-serif; /* A custom font */
+  background-size: cover;
 }
 
 header {
-  padding: 0px;
+  padding: 0;
 }
 
 header img {
@@ -22,19 +29,17 @@ main {
   text-align: center;
 }
 
-
 h1 {
   color: #171717;
   font-size: 58px;
   font-weight: 600;
-  
 }
 
-h2 { /* New styles for subtitle */
+h2 {
   color: #504f50;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 40px; /* Adding some space between subtitle and links */
+  margin-bottom: 40px;
 }
 
 .links {
@@ -42,8 +47,8 @@ h2 { /* New styles for subtitle */
 }
 
 .links a {
-  display: inline-block; 
-  text-align: center; /* Align text inside the button */
+  display: inline-block;
+  text-align: center;
 }
 
 footer {
@@ -54,6 +59,7 @@ footer {
   color: #fff;
   padding: 4px 0;
   text-align: center;
+  max-width: 1920px;
 }
 
 footer a {
@@ -62,22 +68,23 @@ footer a {
   margin: 0 5px;
 }
 
-.app-store-button, .google-play-button {
+.app-store-button,
+.google-play-button {
   display: inline-block;
   margin-right: 10px;
   transition: background-color 0.3s ease;
 }
 
 .google-play-button img {
-  width: 222px; /* Setting width */
-  height: 125px; /* and height */
-  object-fit: contain; /* Ensuring that the image doesn't get distorted */
+  width: 222px;
+  height: 125px;
+  object-fit: contain;
 }
 
-.app-store-button img  {
-  width: 200px; /* Setting width */
-  height: 125px; /* and height */
-  object-fit: contain; /* Ensuring that the image doesn't get distorted */
+.app-store-button img {
+  width: 200px;
+  height: 125px;
+  object-fit: contain;
 }
 
 .glass-container {
@@ -91,17 +98,37 @@ footer a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.358), 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
 /* Added media query for mobile responsiveness */
 @media screen and (max-width: 768px) {
   main {
-    margin-top: 60px;
+    margin-top: 0px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+
+  .google-play-button img {
+    width: 182px;
+    height: 85px;
+    object-fit: contain;
+  }
+  
+  .app-store-button img {
+    width: 165px;
+    height: 85px;
+    object-fit: contain;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1920px;
+    background-image: url("assets/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
