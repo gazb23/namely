@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
- margin-bottom: 110px;
+ 
    max-width: 1920px;
   background-image: none;
 }
@@ -50,10 +50,19 @@ header img {
   width: 150px;
 }
 
+.logo {
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
 footer {
-  position: fixed;
+
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background-color: #A8A8AB;
   color: #fff;
   padding: 4px 0;
