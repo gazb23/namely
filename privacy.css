@@ -2,6 +2,7 @@ body {
   margin: 0 auto;
   max-width: 1920px;
   background-image: none;
+  font-family: 'Poppins';
 }
 
 [data-custom-class='body'],
