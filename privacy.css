@@ -80,9 +80,9 @@ body {
 }
 
 header {
-
+padding: 1rem;
 margin-bottom: 10rem;
-  background-color: #f8d6d2e8;
+  background-color: #fec9c3e8;
   margin-bottom: 40px;
 
 }
