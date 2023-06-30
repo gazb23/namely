@@ -13,6 +13,7 @@ body {
 @font-face {
   font-family: 'Poppins';
   src: url('fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: bold;
 }
 
@@ -97,7 +98,7 @@ h1 {
   color: #eeeeee;
   margin-bottom: 1rem;
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 0.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Poppins';
@@ -106,7 +107,7 @@ h1 {
 h2 {
   color: #1d1d1d;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: regular;
   text-align: center;
   margin-bottom: 1rem;
   font-family: 'Poppins';
@@ -115,7 +116,7 @@ h2 {
 p {
   color: #3b3b3b;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: light;
   margin-bottom: 20px;
 
   margin: auto;
