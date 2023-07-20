@@ -63,6 +63,7 @@ body {
 
 .logo {
   transition: transform 0.3s;
+
 }
 
 .logo:hover {
@@ -71,12 +72,12 @@ body {
 
 
 header {
-  padding: 1rem;
+  padding: 2rem;
 
 }
 
 header img {
-  width: 75px;
+  width: 60px;
 
 }
 
