@@ -1,31 +1,4 @@
-
-
-/* Consider changing to Goolge fonts dynamically */
-@font-face {
-  font-family: 'Poppins';
-  src: url('fonts/Poppins-Black.ttf') format('truetype');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('fonts/Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('fonts/Poppins-Light.ttf') format('truetype');
-  font-style: light;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('fonts/Poppins-Regular.ttf') format('truetype');
-  font-style: regular;
-}
-
+/* Global styles */
 * {
   box-sizing: border-box;
 }
@@ -35,83 +8,67 @@ html {
 }
 
 body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-}
-
-body {
   margin: 0;
   font-family: 'Poppins';
   background: linear-gradient(to right, #B79496, #e6b9b8);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  min-height: 100vh;
+  /* Ensure the body takes at least the viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+  /* The wrapper will grow to fill the available space */
 }
 
 .container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   background: url("assets/background.webp") bottom/cover no-repeat;
-  width: 100%; 
+  width: 100%;
+
   max-width: 1920px;
-  max-height: 1080px;
+  
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1920px; 
   text-align: center;
-
-}
-
-.container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  max-width: 1920px;
-  height: 0.1rem;
-  background-color: #646464;
+  margin: auto;
+  
 }
 
 .description {
   color: #fff;
   font-size: 1.25rem;
   font-weight: 400;
-  margin-bottom: 3rem;
-  max-width: 70%;
   margin: auto;
   text-align: center;
   margin-bottom: 5rem;
+  max-width: 70%;
 }
 
 .logo {
   transition: transform 0.3s;
-
+  width: 50px;
+  height: 50px;
 }
 
 .logo:hover {
   transform: scale(1.1);
 }
 
-
 header {
   padding: 2rem;
-
 }
 
 header img {
   width: 60px;
-
 }
-
-
-
-
-
 
 h1 {
   color: #eeeeee;
@@ -121,6 +78,7 @@ h1 {
   letter-spacing: 0.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Poppins';
+  font-weight: 800;
 }
 
 h2 {
@@ -136,12 +94,10 @@ p {
   color: #3b3b3b;
   font-size: 18px;
   font-weight: light;
-  margin-bottom: 20px;
-
   margin: auto;
   text-align: center;
+  margin-bottom: 20px;
   font-family: 'Poppins';
-
 }
 
 .links {
@@ -151,41 +107,33 @@ p {
 .links a {
   display: inline-block;
   text-align: center;
-
 }
 
 footer {
-
+  display: flex;
+  flex-direction: column;
+  position: absolute;
   bottom: 0;
-  width: 100vw;
-  margin-top: 10rem;
-  color: #fff;
-
-  text-align: center;
-  max-width: 1920px;
+  width: 100%;
+  padding: 20px;
+ 
+ 
+  /* Push the footer to the bottom of the container */
 }
 
 .footer-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
-  padding: 8px;
+ 
   font-family: 'Poppins';
 }
 
-.copy-right {
-  flex: auto;
 
-
-}
 
 footer a {
   color: #ffffffca;
   text-decoration: none;
-
 }
-
 
 .app-store-button,
 .google-play-button {
@@ -212,13 +160,14 @@ footer a {
 }
 
 .glass-container {
-  position: relative;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
   /* Ensure the frosted glass container is on top */
   background: linear-gradient(to bottom left, rgba(255, 255, 255, 0), rgba(219, 219, 219, 0.517));
   border-radius: 35px;
   padding: 20px;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(20px);
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -227,9 +176,10 @@ footer a {
 
 .store-button-container {
   display: flex;
+
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 /* Added media query for mobile responsiveness */
@@ -254,6 +204,15 @@ footer a {
     margin-bottom: 1rem;
   }
 
+  .container {
+    
+    margin: 0 auto;
+    background: url("assets/background.webp") bottom/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+    
+  }
 
   .google-play-button img {
     width: 162px;
@@ -268,39 +227,25 @@ footer a {
   .glass-container {
     background: none;
     backdrop-filter: blur(8px);
+    width: 90%;
+    
 
-    width: 85%;
-    height: 70vh;
   }
 
   .description {
-
     max-width: 100%;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #ffffff;
-
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
   }
 
 
   footer {
-    margin-top: 200px;
-    flex-shrink: 0;
+    position: relative;
+        margin-top: 200px;
+   
+   
+    /* Push the footer to the bottom of the container */
   }
-
-  .container {
-    background: url("assets/background.webp") center/cover no-repeat;
-    width: 100%;
-  }
-
-
-
 }
