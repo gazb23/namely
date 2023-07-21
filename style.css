@@ -28,6 +28,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  
   margin: 0 auto;
   background: url("assets/background.webp") bottom/cover no-repeat;
   width: 100%;
@@ -162,7 +163,7 @@ footer a {
 .glass-container {
   display: flex;
   flex-direction: column;
-
+  
   /* Ensure the frosted glass container is on top */
   background: linear-gradient(to bottom left, rgba(255, 255, 255, 0), rgba(219, 219, 219, 0.517));
   border-radius: 35px;
@@ -203,10 +204,17 @@ footer a {
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
+    font-weight: bold;
+  }
 
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
   }
 
   .container {
@@ -222,13 +230,13 @@ footer a {
   }
 
   .google-play-button img {
-    width: 150px;
-    height: 50px;
+    width: 12rem;
+    
   }
 
   .app-store-button img {
-    width: 135px;
-    height: 50px;
+    width: 11rem;
+    
   }
 
   .glass-container {
