@@ -3,27 +3,28 @@
   box-sizing: border-box;
 }
 
-body {  
+body {
   margin: 0;
   font-family: 'Poppins';
   background: linear-gradient(to right, #B79496, #e6b9b8);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
- 
+
 }
 
 .background-image {
 
   aspect-ratio: 16/9;
   background: url("assets/background.webp") bottom/cover no-repeat;
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 100%;
   max-width: 1920px;
- 
+  min-height: 1080px;
+
 }
 
 
@@ -57,11 +58,11 @@ header img {
 }
 
 h1 {
-  color: #eeeeee;  
+  color: #eeeeee;
   font-size: 5rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-weight: 800;
 }
 
@@ -123,12 +124,12 @@ footer a {
   transform: scale(1.1);
 }
 
-.glass-container {  
+.glass-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute; 
+  position: absolute;
 
   top: 50%;
   left: 50%;
@@ -187,9 +188,9 @@ footer a {
 
   .background-image {
     margin: 0 auto;
-    background: url("assets/background.webp") bottom/cover no-repeat;
-    width: 100%;
+    background: url("assets/background.webp") center/cover no-repeat;
     height: 100vh;
+    max-height: 1080px;
 
   }
 
@@ -204,28 +205,28 @@ footer a {
     width: 150px;
     height: 45px;
     object-fit: contain;
-    
+
   }
 
-  .glass-container {    
+  .glass-container {
     height: fit-content;
     background: linear-gradient(to bottom left, rgba(255, 255, 255, 0), rgba(219, 219, 219, 0.517));
     border-radius: 35px;
-    
+
     backdrop-filter: blur(20px);
-    width: 95%;    
+    width: 95%;
     margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.358), 0 0 50px rgba(0, 0, 0, 0.1);
     padding: 18px;
   }
 
   .glass-box-description {
- 
+
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #ffffff;
-   
+
   }
 
 
