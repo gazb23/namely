@@ -102,8 +102,7 @@ footer a {
 
 .app-store-button,
 .google-play-button {
-  display: inline-block;
-  margin-right: 10px;
+  display: inline-block;  
   transition: transform 0.2s;
 }
 
@@ -146,11 +145,11 @@ footer a {
 
 .store-button-container {
   display: flex;
-
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-
-
+  width: 100%;
+  margin-top: 1rem;
 }
 
 /* Added media query for mobile responsiveness */
@@ -158,8 +157,8 @@ footer a {
 
   .logo {
     transition: transform 0.3s;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   header {
@@ -187,23 +186,25 @@ footer a {
   }
 
   .background-image {
-    margin: 0 auto;
-    background: url("assets/background.webp") center/cover no-repeat;
-    height: 100vh;
-    max-height: 1080px;
+    margin: 0 auto;  
+    background: url("assets/mobile_background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;  
+    
 
   }
 
   .google-play-button img {
     width: 150px;
-    height: 45px;
+    height: auto;
     object-fit: contain;
-
   }
 
   .app-store-button img {
-    width: 150px;
-    height: 45px;
+    width: 155px;
+    height: auto;
     object-fit: contain;
 
   }
@@ -221,12 +222,12 @@ footer a {
   }
 
   .glass-box-description {
-
+    width: 100%;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #ffffff;
-
+    max-width: 100%;
   }
 
 
