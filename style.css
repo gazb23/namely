@@ -186,14 +186,14 @@ footer a {
   }
 
   .background-image {
-    margin: 0 auto;  
-    background: url("assets/mobile_background.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;  
-    
 
+    
+    background: url("assets/background.webp") top/cover no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 100vh;
+  
   }
 
   .google-play-button img {
