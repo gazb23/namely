@@ -110,6 +110,7 @@ footer a {
   width: 220px;
   height: 70px;
   object-fit: contain;
+  margin-right: 16px;
 }
 
 .app-store-button img {
@@ -200,6 +201,7 @@ footer a {
     width: 150px;
     height: auto;
     object-fit: contain;
+    margin-right: 4px;
   }
 
   .app-store-button img {
